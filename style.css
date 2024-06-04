@@ -1,0 +1,200 @@
+body {
+    background-color: #333; /* Fond gris foncé */
+    margin: 0;
+    padding: 0;
+    background-image: url('images/web/image.png');
+    background-size: cover; /* Adapte l'image pour qu'elle couvre tout l'écran */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-attachment: fixed; /* Fixe l'image de fond lors du défilement */
+    background-position: center; /* Centre l'image de fond */
+    color: #c0c0c0; /* Texte gris clair pour contraste */
+    font-family: Arial, sans-serif; /* Police sans serif pour meilleure lisibilité */
+}
+
+header {
+    color: #00ff00; /* Vert vif */
+    text-align: center;
+    padding: 2px;
+    background-color: #222; /* Fond encore plus foncé */
+    border-bottom: 3px solid #00ff00; /* Bordure verte en bas */
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+    background-color: #444; /* Fond gris plus foncé */
+    border-bottom: 3px solid #00ff00; /* Bordure verte en bas */
+}
+
+nav a {
+    color: #00ff00; /* Vert vif */
+    text-decoration: none; /* Pas de soulignement */
+    margin: 0 15px; /* Marge horizontale */
+    font-weight: bold; /* Texte en gras */
+}
+
+nav a:hover {
+    color: #00ff00; /* Blanc */
+}
+
+nav input[type="text"] {
+    padding: 5px; /* Espacement interne */
+    border-radius: 5px; /* Bord arrondi */
+    border: 1px solid #fff; /* Bordure */
+    margin-left: 15px; /* Marge à gauche pour séparer le champ de recherche des liens */
+    background-color: #555; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu horizontalement */
+}
+
+/* Nouveau style pour la section de contribution alignés avec ceux de .character-info */
+.contrib-section {
+    background-color: #444; /* Fond gris foncé (même que .character-info) */
+    border: 2px solid #00ff00; /* Bordure verte vif (même que .character-info) */
+    border-radius: 10px; /* Coins arrondis (même que .character-info) */
+    padding: 20px; /* Espace intérieur */
+    max-width: 800px; /* Largeur maximale */
+    color: #f0f0f0; /* Couleur du texte blanc */
+    margin: 10px auto; /* Centrer et ajouter une marge verticale */
+    text-align: left; /* Aligner le texte à gauche */
+}
+
+.contrib-section h2 {
+    color: #00ff00; /* Couleur du titre vert vif */
+}
+
+.contrib-section a {
+    color: #00ff00; /* Couleur des liens verts */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+.contrib-section a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+.content-wrapper {
+    display: flex; /* Utilisez la disposition flexbox */
+}
+
+.content-block {
+    flex-grow: 1; /* Le bloc de contenu prend tout l'espace disponible */
+    padding: 20px;
+    background-color: #222; /* Couleur de fond encore plus foncée */
+    border: 3px dashed #00ff00; /* Bordure verte vif en pointillés */
+    border-radius: 10px; /* Coins arrondis */
+    color: #fff; /* Couleur du texte blanc */
+    margin-right: 20px; /* Marge à droite pour séparer les sections */
+}
+
+.character-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-info {
+    border: 2px solid #00ff00; /* Couleur de la bordure grise */
+    border-radius: 10px; /* Coins arrondis de la bordure */
+    padding: 20px; /* Espace intérieur autour du contenu */
+    width: 100%;
+    max-width: 800px; /* Largeur maximale de l'encadrement */
+    margin: 10px 0; /* Marge verticale entre les éléments */
+    background-color: #444; /* Couleur de fond gris foncé */
+    text-align: left; /* Aligner le texte à gauche */
+    color: #f0f0f0; /* Couleur du texte blanc */
+    overflow: auto; /* Pour éviter que le texte ne déborde de l'encadrement */
+}
+
+.character-info img {
+    float: right; /* Flotter l'image à droite */
+    margin-left: 20px; /* Ajouter un espace entre l'image et le texte */
+    max-width: 150px; /* Largeur maximale de l'image */
+    height: auto;
+    border-radius: 50%; /* Rendre l'image circulaire */
+}
+
+.character-info h2 {
+    margin-top: 0; /* Supprimer la marge supérieure par défaut du titre */
+}
+
+/* Ajoutez ce nouveau style pour encadrer la description */
+.description-box {
+    border: 2px solid #00ff00; /* Couleur de la bordure verte */
+    padding: 20px;
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+    max-width: 400px; /* Largeur maximale */
+    height: 400px; /* Hauteur fixe pour que la boîte soit carrée */
+    box-sizing: border-box; /* Inclure le padding et la bordure dans la taille totale */
+    background-color: #222; /* Couleur de fond encore plus foncée */
+    color: #fff; /* Couleur du texte blanc */
+    overflow: auto; /* Pour éviter que le texte ne déborde de la boîte */
+    margin: 10px auto; /* Centre la boîte horizontalement */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.content-block {
+    background-color: #222; /* Fond encore plus foncé */
+    padding: 20px;
+    border: 3px dashed #00ff00; /* Bordure verte vif en pointillés */
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto; /* Centre le bloc horizontalement */
+    text-align: center; /* Centre le texte à l'intérieur du bloc */
+    color: #fff; /* Couleur du texte blanc */
+}
+
+.fancy-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police */
+    font-size: 20px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    text-transform: uppercase; /* Convertit le texte en majuscules */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+}
+
+.game-description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.help-text {
+    font-size: 14px;
+}
+
+.download-links {
+    margin-top: 20px; /* Marge supérieure pour séparer les liens */
+}
+
+.download-links a {
+    color: #00ff00; /* Couleur du texte vert */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    margin-right: 20px; /* Marge à droite pour séparer les liens */
+}
+
+.download-links a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+footer {
+    color: #00ff00; /* Vert vif */
+    text-align: center;
+    padding: -20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #222; /* Fond encore plus foncé */
+    border-top: 3px solid #00ff00; /* Bordure verte en haut */
+}
+
+h1, h2, h3 {
+    font-family: Arial, sans-serif; /* Police très en gras */
+}
+
+.hidden {
+    display: none;
+}

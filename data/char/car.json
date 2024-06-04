@@ -1,0 +1,9 @@
+{
+  "name": "Car",
+  "image": "images/characters/car.png",
+  "shortDescription": "Short description goes here.",
+  "description": "This is a brief summary of Car. Detailed information about Car goes here.",
+  "age": "Unknown",
+  "family": "Unknown",
+  "background": "Unknown"
+}
