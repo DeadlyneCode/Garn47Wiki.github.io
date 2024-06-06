@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
             characters.forEach(character => {
                 const characterDiv = document.createElement("div");
                 characterDiv.className = "character-info";
-                characterDiv.setAttribute("data-json", `https://deadlynecode.github.io/Garn47Wiki.github.io/${character.name.toLowerCase()}.json`);
+                characterDiv.setAttribute("data-json", `https://deadlynecode.github.io/Garn47Wiki.github.io/data/char${character.name.toLowerCase()}.json`);
 
                 const img = document.createElement("img");
                 img.src = `https://deadlynecode.github.io/Garn47Wiki.github.io/${character.image}`;
