@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const detailsHTML = `
         <div class="character-info">
-            <img src="https://deadlynecode.github.io/Garn47Wiki.github.io/${characterDetails.image}" alt="${characterDetails.name}">
+            <img src="${characterDetails.image}" alt="${characterDetails.name}">
             <h2>${characterDetails.name}</h2>
             <div class="description-box">
                 <p>${characterDetails.description}</p>
