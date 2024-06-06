@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(characterFiles => {
             // Fetch chaque fichier de personnage
             return Promise.all(characterFiles.map(file => 
-                fetch(`https://deadlynecode.github.io/Garn47Wiki.github.io/${file}`)
+                fetch(`https://deadlynecode.github.io/Garn47Wiki.github.io/data/char/${file}`)
                 .then(response => response.json())
             ));
         })
