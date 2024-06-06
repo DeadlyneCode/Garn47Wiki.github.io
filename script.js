@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 characters.forEach(character => {
                     const characterName = character.name.toLowerCase();
                     const characterSummary = character.shortDescription.toLowerCase(); // Utilisation de shortDescription
-                    const characterDiv = document.querySelector(`[data-json="https://deadlynecode.github.io/Garn47Wiki.github.io/data/char/${character.name.toLowerCase()}.json"]`);
+                    const characterDiv = document.querySelector(`[data-json="https://deadlynecode.github.io/Garn47Wiki.github.io/${character.name.toLowerCase()}.json"]`);
 
                     if (characterName.includes(searchTerm) || characterSummary.includes(searchTerm)) {
                         characterDiv.style.display = "block";
